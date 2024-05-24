@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.dancing-script-all {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 25px;
+}
+
+body {
+  background-color: rgb(104, 109, 224);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: white;
+  width: 720px;
+  height: 437px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h1 {
+  color: grey;
+}
+
+button {
+  background-color: rgb(159, 104, 224);
+  border: 0px;
+  height: 59px;
+  width: 252px;
+  border-radius: 15px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}

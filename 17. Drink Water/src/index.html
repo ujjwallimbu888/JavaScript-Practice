@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drink Water</title>
+    <link rel="stylesheet" href="output.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body class="flex h-[780px] w-screen justify-center bg-[#3493e4]">
+    <div class="box flex flex-col justify-around text-center text-white">
+      <h1 class="text-4xl font-bold">Drink Water</h1>
+      <h2 class="text-xl font-bold">Goal: 2 Liters</h2>
+      <div class="goal flex h-80 w-full justify-center self-center">
+        <div
+          class="transition-width container flex h-full w-36 flex-col justify-between rounded-b-3xl border-4 border-[#144fc6] bg-white text-[#144fc6] duration-200 ease-in"
+          id="container"
+        >
+          <div
+            id="remaining"
+            class="remaining flex h-full flex-col justify-center overflow-hidden"
+          >
+            <h3 class="text-xl font-bold">2L</h3>
+            <p>Remained</p>
+          </div>
+          <div
+            id="percentage"
+            class="transition-width ease flex items-center justify-center overflow-hidden rounded-b-2xl bg-[#6ab3f8] text-3xl font-bold duration-1000"
+          ></div>
+        </div>
+      </div>
+      <h2>Select How many Glasses of water that you have drank</h2>
+      <div class="glasses flex w-1/2 flex-wrap self-center">
+        <div
+          class="glass hover: container m-2 flex h-28 w-11 cursor-pointer flex-col justify-center rounded-b-3xl border-4 border-[#144fc6] bg-white text-center text-[#144fc6]"
+        >
+          <number>250</number>
+          <quantity>ml</quantity>
+        </div>
+        <div
+          class="glass container m-2 flex h-28 w-11 cursor-pointer flex-col justify-center rounded-b-3xl border-4 border-[#144fc6] bg-white text-center text-[#144fc6]"
+        >
+          <number>250</number>
+          <quantity>ml</quantity>
+        </div>
+        <div
+          class="glass container m-2 flex h-28 w-11 cursor-pointer flex-col justify-center rounded-b-3xl border-4 border-[#144fc6] bg-white text-center text-[#144fc6]"
+        >
+          <number>250</number>
+          <quantity>ml</quantity>
+        </div>
+        <div
+          class="glass container m-2 flex h-28 w-11 cursor-pointer flex-col justify-center rounded-b-3xl border-4 border-[#144fc6] bg-white text-center text-[#144fc6]"
+        >
+          <number>250</number>
+          <quantity>ml</quantity>
+        </div>
+        <div
+          class="glass container m-2 flex h-28 w-11 cursor-pointer flex-col justify-center rounded-b-3xl border-4 border-[#144fc6] bg-white text-center text-[#144fc6]"
+        >
+          <number>250</number>
+          <quantity>ml</quantity>
+        </div>
+        <div
+          class="glass container m-2 flex h-28 w-11 cursor-pointer flex-col justify-center rounded-b-3xl border-4 border-[#144fc6] bg-white text-center text-[#144fc6]"
+        >
+          <number>250</number>
+          <quantity>ml</quantity>
+        </div>
+        <div
+          class="glass container m-2 flex h-28 w-11 cursor-pointer flex-col justify-center rounded-b-3xl border-4 border-[#144fc6] bg-white text-center text-[#144fc6]"
+        >
+          <number>250</number>
+          <quantity>ml</quantity>
+        </div>
+        <div
+          class="glass container m-2 flex h-28 w-11 cursor-pointer flex-col justify-center rounded-b-3xl border-4 border-[#144fc6] bg-white text-center text-[#144fc6]"
+        >
+          <number>250</number>
+          <quantity>ml</quantity>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

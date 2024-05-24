@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+small {
+  font-style: italic;
+  color: #555555;
+}
+
+body {
+  background-color: #333333;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #fafafa;
+}
+
+.content {
+  max-width: 1000px;
+  width: 89vw;
+  margin: 25px auto;
+}
+
+.menu {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #ff7979;
+  height: 100px;
+  width: 100px;
+  border-radius: 0% 100% 100% 0% / 100% 0% 100% 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.open-bar {
+  height: 87px;
+  width: 10px;
+  display: flex;
+  align-items: flex-end;
+  transform: translate(-30px, -27px) rotate(0deg);
+}
+
+#open {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 32px;
+  width: 100px;
+  position: absolute;
+  left: -12px;
+  background-color: transparent;
+  border: 0px;
+  cursor: pointer;
+}
+
+.bar {
+  background-color: white;
+  height: 3.5px;
+  width: 24px;
+  border-radius: 3px;
+}
+
+#close {
+  height: 102px;
+  width: 30px;
+  background-color: transparent;
+  border: 0px;
+  transform: rotate(-103deg) translate(-20px, -55px);
+  display: flex;
+  justify-content: flex-end;
+  transform-origin: top left;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+#line1 {
+  rotate: 135deg;
+  background-color: white;
+  height: 4.5px;
+  width: 24px;
+  border-radius: 3px;
+  position: fixed;
+  z-index: 1;
+}
+
+#line2 {
+  rotate: 45deg;
+  background-color: white;
+  height: 4.5px;
+  width: 24px;
+  border-radius: 3px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin: 10px auto;
+}
+
+p {
+  font-size: 1rem;
+  margin: 20px auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+nav {
+  position: fixed;
+  left: 12px;
+  top: 190px;
+  width: 500px;
+  font-size: 18px;
+  color: white;
+  margin: 29px 0px;
+  height: 52vh;
+  z-index: 1;
+  transform: translateX(-170px);
+}
+
+li {
+  list-style: none;
+}
+
+.fa-solid {
+  margin: 10px;
+}
+
+.fa-address-card {
+  padding: 50px 0px;
+}
+
+li:nth-of-type(2) {
+  padding: 0 25px;
+}
+li:nth-of-type(3) {
+  padding: 0 50px;
+}

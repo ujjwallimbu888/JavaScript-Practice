@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-text {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  opacity: 1;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 2.9em;
+  line-height: 1;
+  letter-spacing: 0.073em;
+}
+
+.image {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("https://source.unsplash.com/man-in-black-wet-suit-diving-on-water-with-school-of-fish-eLfDul2Uu8k");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  filter: blur(26px);
+  clip-path: inset(0);
+  position: relative;
+  z-index: 0;
+}
+
+.image.active {
+  filter: blur(0px);
+  transition: 3s ease-in;
+}

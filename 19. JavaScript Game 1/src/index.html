@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Game 1</title>
+    <link rel="stylesheet" href="output.css" />
+    <script defer src="style.js"></script>
+  </head>
+  <body>
+    <!--! Canvas defines a bitmapped area in an HTML page.Bitmapped refers to an image or graphical representation that is composed of individual pixels. -->
+    <!--! Canvas API provides a means for drawing graphics via  JavaScriptand HTML <canvas> el. And it allows you to draw shapes, lines, curves, and other px manipulations. -->
+    <canvas
+      id="canvas1"
+      class="absolute left-1/2 top-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 border-4 border-solid border-black"
+    ></canvas>
+    <div
+      class="controls group relative left-1/2 top-0 w-40 rounded-xl bg-slate-500"
+    >
+      <label for="animations">Choose Animations</label>
+      <select name="animations" class="select rounded-lg" id="animations">
+        <option value="idle">Idle</option>
+        <option value="jump">Jump</option>
+        <option value="fall">Fall</option>
+        <option value="run">Run</option>
+        <option value="dizzy">Dizzy</option>
+        <option value="sit">Sit</option>
+        <option value="roll">Roll</option>
+        <option value="bite">Bite</option>
+        <option value="ko">KO</option>
+        <option value="gethit">Get hit</option>
+      </select>
+    </div>
+  </body>
+</html>

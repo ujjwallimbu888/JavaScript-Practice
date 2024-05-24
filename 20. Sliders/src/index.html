@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sliders</title>
+    <link rel="stylesheet" href="output.css" />
+    <script
+      src="https://kit.fontawesome.com/8b4cba5979.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="main_container h-dvh w-dvw backdrop-blur-sm">
+      <div
+        class="back_image absolute left-0 top-0 z-0 h-dvh w-dvw bg-[url('https://50projects-50-days.netlify.app/18.%20background%20slider/images/1.jpg')] bg-center brightness-50"
+      ></div>
+      <div
+        class="hello absolute z-10 flex h-dvh w-dvw items-center justify-center"
+      >
+        <div class="container h-2/3 w-2/3">
+          <div class="links h-full w-full">
+            <div
+              class="slider h-full w-full bg-[url('https://50projects-50-days.netlify.app/18.%20background%20slider/images/1.jpg')] bg-cover bg-center"
+            ></div>
+          </div>
+          <div
+            class="controls fixed top-1/2 z-0 flex w-4/6 justify-between border-transparent text-3xl text-white"
+          >
+            <button
+              class="prev control -translate-x-2/3 cursor-pointer border-4 border-yellow-400 p-5"
+            >
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button
+              class="next control translate-x-2/3 cursor-pointer border-4 border-yellow-400 p-5"
+            >
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

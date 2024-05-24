@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+/* ! just could have used linear gradient. It doesn't have always to be horizontal for you to apply it */
+.container::before {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 50vh;
+  background-color: #9db2bf;
+  position: relative;
+}
+
+.container::after {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 50vh;
+  background-color: #dde6ed;
+}
+
+.navigations {
+  background-color: #526d82;
+  width: 439px;
+  height: 87px;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 20px;
+  box-shadow: 4px 5px 10px 0px black;
+  transition: width 2s ease-in;
+}
+
+.navigations.active {
+  width: 100px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+/*! Rather than using general selector, use a little bit specific like navigations a, otherwise it'll give you problems in the future while maintaining */
+a {
+  text-decoration: none;
+  color: black;
+  transition: 2s ease;
+}
+
+/* ! Rather than using the active like below, using nav and should have went to the a, such that you'd be able to implement toggle feature and wouldn't have to have multiple elements selected through DOM and applying the styles. Not sutable at all.
+
+Better method
+nav.active ul li{
+    transform: rotateY(360deg);
+    opacity: 1;
+}
+*/
+a.active {
+  transform: translateX(300px) rotateY(360deg);
+  opacity: 0;
+}
+
+/* use of descriptive name */
+button {
+  background-color: transparent;
+  border: 0px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+button.active {
+  transform: translateX(-48px);
+}
+
+.line {
+  background: #bed7dc;
+  height: 2.5px;
+  width: 26px;
+  margin: 3px;
+  position: relative;
+  transition: 2s ease;
+}
+/* Cross animation */
+.line:nth-of-type(2) {
+  transform: rotate(-765deg) translateY(-4px);
+}
+
+.line:nth-of-type(1) {
+  transform: rotate(765deg) translateY(4px);
+}
+
+.line.active {
+  transform: rotate(0deg) translateY(4px);
+}
